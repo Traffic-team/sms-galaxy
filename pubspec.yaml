@@ -1,0 +1,49 @@
+name: smsgalaxy
+description: A new Flutter project to manage SMS forwarding.
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # پکیج‌ها و وابستگی‌های اصلی پروژه
+  flutter_background_service: ^5.0.10
+  android_alarm_manager_plus: ^4.0.4
+  shared_preferences: ^2.3.2
+  http: ^1.2.2
+  sms_advanced: ^1.1.0  # پکیج برای مدیریت پیامک
+  telephony: ^0.2.0  # برای دسترسی به مدیریت سیم‌کارت‌ها (اختیاری)
+
+  # پشتیبانی از حالت null safety
+  flutter_lints: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+
+  # مسیر و تنظیمات مربوط به فایل‌های مرتبط با تصاویر و آیکون‌ها
+  assets:
+    - assets/
+
+  uses-material-design: true
+
+  # فونت‌ها و تم‌های سفارشی در صورت نیاز
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
+        - asset: fonts/Roboto-Bold.ttf
+          weight: 700
+
+# تنظیمات آیکون‌ها
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
